@@ -1,0 +1,10 @@
+import cx_Oracle
+con=cx_Oracle.connect("SYSTEM/user123@localhost/xe")
+cur=con.cursor()
+cur.execute("create table block(Account_no number(20),status number(5),FOREIGN KEY(Account_No) REFERENCES Bank_Details(Account_No))")
+cur.execute("insert into block values(10004896,1)")
+cur.execute("insert into block values(10004897,1)")
+cur.execute("insert into block values(10004898,1)")
+cur.execute("insert into block values(10004899,1)")
+con.commit()
+con.close()
