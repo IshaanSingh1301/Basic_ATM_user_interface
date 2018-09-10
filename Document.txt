@@ -1,0 +1,7 @@
+Working of this project:
+First of all run Bank details table program as it creates the database which contains details of accounts initially entered.
+Then run Debits table program to create a database that will save all the transaction done through ATM user gateway.
+After that run block table , this table saves transactions done on the basis of unique transaction id and able to block the user account after three times entering wrong pin for a particular account.
+For unblocking the account , run unblock table.
+After creating all databases . run the main program to operate and access database.
+ 
